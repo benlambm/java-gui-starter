@@ -104,28 +104,35 @@ hunter.
 5. **Commit.** One green test class is a perfect-sized commit with an
    obvious message.
 
-Reading tip, same as Module 2: a test that dies with a
-`NullPointerException` instead of a tidy `expected: <x> but was: <y>`
-means some method is still returning its `null` placeholder — usually
-a `shoot()` you haven't finished. Follow the route in order and those
-clear up on their own.
+## Complete the starter — 70 points
 
-## Victory lap
+Get all **28 provided tests** passing. This requirement is worth 70
+points. Run `Main` and confirm that the game launches and is playable
+before you begin your enhancements.
 
-All 28 green? Run `Main` and actually play:
-- Shoot a deer with the **Bow** — it vanishes, +10.
-- Switch to the **Camera** (the button *you* wired) — shoot the bear:
-  +100, and it fades but keeps walking.
-- Shoot it again with camera = 0 points. 
+## Add three feature enhancements — 30 points
 
-## Add 1 of the following (no tests)
+Add **three distinct, working improvements** to the game. Each
+enhancement is worth 10 points and must leave all 28 provided tests
+passing.
 
-- **A fourth species.** `Rabbit`? `Eagle`? Extend `Animal`, invent a
-  movement, add a color case in `GamePanel.drawAnimal`, spawn one in
-  `Game.spawnStartingAnimals`. If your species moves in a genuinely new
-  way, show it off in your video.
-- **A third instrument.** A `Tranquilizer` that scores face value and
-  removes the animal *gently*? A `Binoculars` that scores 1 point and
-  never marks anything? One new class + one new radio button — zero
-  changes to `Hunter` or `Game`. *That* is why the strategy pattern
-  exists, and saying so on camera is worth style points.
+Possible enhancements include:
+
+- a new animal with its own movement
+- a new hunting instrument
+- a game-over and restart flow
+- new or randomly respawning animals
+- a new game mode or scoring rule
+- improved animal graphics
+
+Choose any three. You may also propose your own improvements. Unit
+tests for your enhancements are recommended, but they are not required
+and will not be used for grading.
+
+## Before you submit
+
+- `Main` launches and the game is playable.
+- All 28 provided tests pass.
+- Three feature enhancements work in the running game.
+- All provided tests still pass after the enhancements.
+- Submit the completed project through the Canvas assignment.
